@@ -1,0 +1,193 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Duplex Template Documentation</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;Duplex Template&rdquo; Documentation by &ldquo;Orman Clark&rdquo; v1.0</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;Duplex Template&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 9/12/2010<br>
+					By: Orman Clark<br>
+					<a href="http://themeforest.net/user/ormanclark">http://themeforest.net/user/ormanclark</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my template. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://themeforest.net/user/ormanclark">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#templates">Page Templates</a></li>
+			<li><a href="#cssFiles">CSS Files &amp; Structure</a></li>
+			<li><a href="#javascript">JavaScript</a></li>
+			<li><a href="#psdFiles">PSD Files</a></li>
+			<li><a href="#credits">Sources and Credits</a></li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="templates"><strong>A) Page Templates</strong> - <a href="#toc">top</a></h3>
+		
+				<p>Duplex comes with five custom page templates; Homepage, Blog Post, Archive, Contact and Full Width. These templates can be used on individual pages to alter the display or functionality.</p>
+				
+				<h4><strong>Homepage Template</strong></h4>
+				
+				<p>The homepage template is of magazine style in nature and displays an array of content in various formats.</p>
+				
+				<h4><strong>Blog Post Template</strong></h4>
+				
+				<p>The blog post template displays the content of each page/post and includes sections for related posts and comments.</p>
+				
+				<h4><strong>Archives Template</strong></h4>
+				
+				<p>The archive template is intended to be used as either an date archive, category archive, author archive, tag archive or for any other situation where posts would need to be grouped e.g. search results.</p>
+				
+				<h4><strong>Full Width Template</strong></h4>
+				
+				<p>The Full Width template allows the creation of a page without a sidebar - the main content will span the full width of the site.</p>
+				
+				<h4><strong>Contact Form Template</strong></h4>
+				
+				<p>Duplex comes packed with a fully functioning contact form. The form includes jQuery validation to enhance user experience and the recipient email can be configured from the within the code. At the top of this template you will see two references to an email address. You will need to alter these to a working email address in order to receive emails.</p>
+                
+		
+		<hr>
+
+		<h3 id="cssFiles"><strong>B) CSS Files &amp; structure</strong> - <a href="#toc">top</a></h3>
+
+				<p>The Duplex Template includes a number of CSS files that are used at various times depending on the site's display. All CSS files, with the exception of the main CSS file (style.css) can be found in the Template's <em><strong>/css/</strong></em> folder.</p>
+				
+				<ul>
+				<li><strong>Reset.css</strong> - The goal of a reset stylesheet is to reduce browser inconsistencies in things like default line heights, margins and font sizes of headings, and so on. More information can be found <a href="http://meyerweb.com/eric/tools/css/reset/">here</a>.</li>
+				<li><strong>Style.css</strong> - The template's main stylesheet.</li>
+				<li><strong>960.css</strong> -The 960 Grid System is an effort to streamline web development workflow by providing commonly used dimensions, based on a width of 960 pixels. More information can be found <a href="http://960.gs/">here</a>.</li>
+				<li><strong>ie.css</strong> - CSS styles specific to Internet Explorer</li>
+				<li><strong>superfish.css</strong> - Essential CSS styles for the dropdown menus</li>
+				<li><strong>text.css</strong> - Default typography settings</li>
+				</ul>
+<br />
+
+<h4><strong>CSS Structure</strong></h4>
+                
+                <p>Each page template is separated into three parts, <strong>#header</strong>, <strong>#the_body</strong> and <strong>#footer</strong>.</p> 
+                
+                <h6><strong>#header</strong></h6>
+                <p>The #header represents everything from the top of the website to the main navigation. 
+                This element stays the same throughout each page template.</p>
+                
+                <h6><strong>#the_body</strong></h6>
+                <p>The #the_body represents everything in the centre of the website. Anything in-between the main navigation and the footer</p>
+                 
+                <h6><strong>#footer</strong></h6>
+                <p>The #footer represents everything at the bottom of template. This remains the same for all page templates.</p>
+                
+                <p>Click the image below to see a full-sized overview of the CSS classes and ID's.</p>
+                
+                <p><a href="images/duplex_help.jpg"><img src="images/duplex_help_s.jpg" alt="duplex_help_s" width="400" height="665" /></a></p>
+                
+                <h4><strong>The slider</strong></h4>
+				
+				<p>Each slide is in an element with class ".item". Append a ".item" section after the previous panel to create more slides.</p>
+                <p>The navigation for the slider is in "#slider_nav". This can only contain 6 items. So you should only have 6 panels. you should only need to change the image source here.</p>
+                
+                <h4><strong>Featured Post Carousel</strong></h4>
+				
+				<p>The carousel is made up of content columns using the class ".column". Add more containers with the class ".column" to add more content to the carousel.</p>
+                
+                <h4><strong>The sidebar tabs</strong></h4>
+				
+				<p>Each tab section contains normal lists with data. Change this data to your own by replacing what is already there. The tab navigation is located just above the first tab code. You can change the tab text here.</p>
+
+
+		<hr>
+		
+		<h3 id="javascript"><strong>C) JavaScript</strong> - <a href="#toc">top</a></h3>
+		
+				<p>This Template imports various Javascript files.</p>
+				
+				<ol>
+					<li>jQuery</li>
+					<li>Superfish</li>
+					<li>JQuery Easing Plugin</li>
+					<li>Template's Custom JS</li>
+					<li>jQuery UI</li>
+					<li>JQuery Validation Plugin</li>
+					<li>jQuery Cycle Plugin</li>
+				</ol>
+				  
+				<ol>
+					<li>jQuery is a Javascript library that greatly reduces the amount of code that you must write.</li>
+					<li>Superfish controls the display of the dropdown menus. More info <a href="http://users.tpg.com.au/j_birch/plugins/superfish/">here</a></li>
+					<li>The JQuery Easing plugin allows developers to add effects to animations</li>
+					<li>The Template's custom JS file defines various opacity transitions and dropdown menu settings.</li>
+					<li>The JQuery UI library allows developers to add advanced effects with jQuery</li>
+					<li>JQuery Validation Plugin handles the validation of the inbuilt contact form</li>
+					<li>The jQuery Cycle Plugin is a slideshow plugin that supports many different types of transition effects.</li>
+				</ol>
+		
+		<hr>
+		
+		<h3 id="psdFiles"><strong>L) PSD Files</strong> - <a href="#toc">top</a></h3>
+		
+				<p>I've included three psds with this Template:</p>
+				
+					<ol>
+						<li>The homepage layout</li>
+						<li>The post page layout</li>
+						<li>The category page layout</li>
+					</ol>
+				
+				<p>All PSDs contain styling for all necessary elements including layouts, icons and all custom widgets.</p>
+		
+		<hr>
+		
+		<h3 id="credits"><strong>M) Sources and Credits</strong> - <a href="#toc">top</a></h3>
+		
+				<p>I've used the following images, icons or other files as listed.
+				
+				<ul>
+					<li>jQuery - <a href="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js">http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js</a></li>
+					<li>Superfish - <a href="http://users.tpg.com.au/j_birch/plugins/superfish/">http://users.tpg.com.au/j_birch/plugins/superfish/</a></li>
+					<li>JQuery Validation Plugin - <a href="http://docs.jquery.com/Plugins/Validation">http://docs.jquery.com/Plugins/Validation</a></li>
+					<li>jQuery Easing Plugin - <a href="http://gsgd.co.uk/sandbox/jquery/easing/">http://gsgd.co.uk/sandbox/jquery/easing/</a></li>
+					<li>jQuery Cycle Plugin - <a href="http://malsup.com/jquery/cycle/">http://malsup.com/jquery/cycle/</a></li>
+					<li>960 Grid System - <a href="http://960.gs/">http://960.gs/</a></li>
+				</ul>
+		
+		<hr>
+		
+		<p>Once again, thank you so much for purchasing this template. As I said at the beginning, I'd be glad to help you if you have any questions relating to this Template. No guarantees, but I'll do my best to assist. If you have a more general question relating to the Templates on TemplateForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p> 
+		
+		<p class="append-bottom alt large"><strong>Orman</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>
