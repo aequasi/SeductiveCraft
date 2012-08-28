@@ -31,10 +31,10 @@ jQuery(document).ready(function() {
 	});
 
 	jQuery( 'ul.sf-menu .popup-trigger').on( 'mousein', function() {
-		$( this ).children( '.popup' ).eq( 0 ).show();
+		$( this ).next( '.popup' ).eq( 0 ).show();
 	})
 	jQuery( 'ul.sf-menu .popup-trigger').on( 'mouseout', function() {
-		$( this ).children( '.popup' ).eq( 0 ).hide();
+		$( this ).next( '.popup' ).eq( 0 ).hide();
 	})
 	
 	// Submit buttons
