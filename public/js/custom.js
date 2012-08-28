@@ -29,6 +29,13 @@ jQuery(document).ready(function() {
         	return '<li><a href="#"><img src="' + $(slide).find(".image a img").eq(0).attr("src") + '" width="78" height="65" /></a></li>';
     	} 
 	});
+
+	jQuery( 'ul.sf-menu .popup-trigger').on( 'mousein', function() {
+		$( this ).children( '.popup' ).eq( 0 ).show();
+	})
+	jQuery( 'ul.sf-menu .popup-trigger').on( 'mouseout', function() {
+		$( this ).children( '.popup' ).eq( 0 ).hide();
+	})
 	
 	// Submit buttons
 	jQuery('#featured').not('#featured_slider_prev, #featured_slider_next').hover( 
