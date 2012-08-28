@@ -46,6 +46,27 @@ $this->doctype ()
 				<!--second_nav-->
 			</div>
 			<!--grid_9-->
+			<div class="grid_3">
+				<div id="right_nav">
+					<ul class="sf-menu">
+						<li>
+							<a href="#" class='popup-trigger'>Login</a>
+							<div class="popup">
+								<form action="/forum/ucp.php?mode=login" method="post">
+									<h3><a href="/forum/ucp.php?mode=login">Login</a>&nbsp; &bull; &nbsp; <a href="./forum/ucp.php?mode=register">Register</a></h3>
+									<fieldset>
+										<label for="username">Username:</label>&nbsp;
+										<input type="text" name="username" id="username" size="10" title="Username" />
+										<label for="password">Password:</label>&nbsp;
+										<input type="password" name="password" id="password" size="10" title="Password" />
+										<input type="submit" name="login" value="Login" />
+									</fieldset>
+								</form>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
 			<div class="clear"></div>
 		</div>
 		<!--container_12-->
@@ -193,48 +214,34 @@ $this->doctype ()
 							<div class="last">
 								<a href="#"><img src="images/content/flickr.jpg" width="55" height="55" alt="flickr"></a>
 							</div-->
-
 							Disabled for now
 							<span class="clear"></span>
-
 						</div>
 						<!--flickr-->
-
 					</div>
 					<!--widget-->
-
 					<div class="clear"></div>
-
 				</div>
 				<!--column-->
-
 				<div class="clear"></div>
-
 			</div>
 			<!--foote_bg-->
-
 			<div id="footer_bottom">
-
-				<p class="left">Copyright 2010 <a href="index.html">Duplex</a>. All Rights Reserved.</p>
-
-				<p class="right"><a href="http://www.premiumpixels.com/duplex-html">Duplex template</a> by
-					<a href="http://www.premiumpixels.com">Orman</a></p>
-
+				<p class="left">&copy; 2012 <a href="/">Seductive Turtle</a>. All Rights Reserved.</p>
 				<div class="clear"></div>
-
 			</div>
 			<!--bottom-->
-
 		</div>
 		<!--grid_12-->
-
 		<div class="clear"></div>
-
 	</div>
 	<!--container_12-->
-
 </div>
 <div class="clear"></div>
-<?=$this->inlineScript () ?>
+<script type="text/javascript" src="/js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="/js/superfish.js"></script>
+<script type="text/javascript" src="/js/jquery.cycle.all.min.js"></script>
+<script type="text/javascript" src="/js/jquery-ui-1.8.5.custom.min.js"></script>
+<script type="text/javascript" src="/js/custom.js"></script>
 </body>
 </html>
